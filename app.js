@@ -13,6 +13,18 @@ app.get('/', (req, res, next)=>{
     // res.sendFiles(__dirname, + './views/index.hbs');
 });
 
+// route 'works'
+app.get('/works', (req, res, next)=>{
+    res.render('works');
+});
+// route 'gallery'
+app.get('/gallery', (req, res, next)=>{
+    res.render('gallery');
+});
+// route 'about'
+app.get('/about', (req, res, next)=>{
+    res.render('about');
+});
 // Server Started
 app.listen(3000, () => console.log('You\'re Good Gary !'));
 
